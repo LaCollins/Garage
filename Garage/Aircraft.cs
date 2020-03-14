@@ -4,12 +4,8 @@ using System.Text;
 
 namespace Garage
 {
-    class Aircraft
+    class Aircraft : Vehicle
     {
-        public int Fuel { get; set; }
-        public VehicleColor Color { get; set; }
-        public int Passengers { get; set; }
-
         public Aircraft(int fuel, int passengers, VehicleColor color)
         {
             Fuel = fuel;
@@ -17,7 +13,7 @@ namespace Garage
             Color = color;
         }
 
-        public void Refuel(int numberOfGallons)
+        public override void Refuel(int numberOfGallons)
         {
             if (numberOfGallons <= Fuel)
             {
@@ -25,13 +21,8 @@ namespace Garage
             }
             else
             {
-                Console.WriteLine($"{numberOfGallons} gallons of fuel is too much for your plane.")
-            };
-        }
-
-        public void Fly(int miles)
-        {
-            Console.WriteLine($"You fly the plane {miles} miles.");
+                Console.WriteLine($"{numberOfGallons} gallons of fuel is too much for your plane.");
+            }
         }
 
         public void Land()
