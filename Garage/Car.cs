@@ -8,9 +8,9 @@ namespace Garage
     {
         public int Fuel { get; set; }
         public int Passengers { get; set; }
-        public CarColor Color { get; set; }
+        public VehicleColor Color { get; set; }
 
-        public Car(int fuel, int passengers, CarColor color)
+        public Car(int fuel, int passengers, VehicleColor color)
         {
             Fuel = fuel;
             Passengers = passengers;
@@ -38,17 +38,5 @@ namespace Garage
         {
             Console.WriteLine($"You break the vehicle");
         }
-    }
-
-    enum CarColor
-    {
-        Yellow,
-        Red,
-        Green,
-        White,
-        Grey,
-        Blue,
-        Black,
-        Orange
     }
 }
