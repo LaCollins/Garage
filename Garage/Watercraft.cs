@@ -10,6 +10,13 @@ namespace Garage
         public int Passengers { get; set; }
         public VehicleColor Color { get; set; }
 
+        public Watercraft(int fuel, int passengers, VehicleColor color)
+        {
+            Fuel = fuel;
+            Passengers = passengers;
+            Color = color;
+        }
+
         public void Refuel(int numberOfGallons)
         {
             if (numberOfGallons <= Fuel)
