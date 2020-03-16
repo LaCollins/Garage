@@ -6,13 +6,6 @@ namespace Garage
 {
     class Watercraft : Vehicle
     {
-        public Watercraft(int fuel, int passengers, VehicleColor color)
-        {
-            Fuel = fuel;
-            Passengers = passengers;
-            Color = color;
-        }
-
         public override void Refuel(int numberOfGallons)
         {
             if (numberOfGallons <= Fuel)
