@@ -25,6 +25,11 @@ namespace Garage
             }
         }
 
+        public void Fly(int miles)
+        {
+            Console.WriteLine($"You fly {miles} miles.");
+        }
+
         public void Land()
         {
             Console.WriteLine($"You land the plane.");

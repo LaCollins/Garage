@@ -14,8 +14,7 @@ namespace Garage
         {
             Console.WriteLine($"You put {numberOfGallons} gallons of fuel in the vehicle.");
         }
-
-        public void Drive(int miles)
+        public virtual void Drive(int miles)
         {
             Console.WriteLine($"You travel {miles} miles.");
         }

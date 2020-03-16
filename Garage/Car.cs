@@ -7,13 +7,6 @@ namespace Garage
     class Car : Vehicle
     {
 
-        public Car(int fuel, int passengers, VehicleColor color)
-        {
-            Fuel = fuel;
-            Passengers = passengers;
-            Color = color;
-        }
-
         public override void Refuel(int numberOfGallons)
         {
             if (numberOfGallons <= Fuel)
@@ -28,7 +21,7 @@ namespace Garage
 
         public void Break()
         {
-            Console.WriteLine($"You break the vehicle");
+            Console.WriteLine($"You slow the vehicle with the break pedal");
         }
     }
 }
