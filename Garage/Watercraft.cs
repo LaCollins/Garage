@@ -4,8 +4,14 @@ using System.Text;
 
 namespace Garage
 {
-    class Car : Vehicle
+    class Watercraft : Vehicle
     {
+        public Watercraft(int fuel, int passengers, VehicleColor color)
+        {
+            Fuel = fuel;
+            Passengers = passengers;
+            Color = color;
+        }
 
         public override void Refuel(int numberOfGallons)
         {
@@ -17,11 +23,6 @@ namespace Garage
             {
                 Console.WriteLine($"{numberOfGallons} gallons of fuel is too much for your vehicle.");
             }
-        }
-
-        public void Break()
-        {
-            Console.WriteLine($"You slow the vehicle with the break pedal");
         }
     }
 }
