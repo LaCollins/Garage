@@ -4,7 +4,7 @@ using System.Text;
 
 namespace Garage.Cars
 {
-    internal class FordFiesta : Car
+    class FordFiesta : Car
     {
         public FordFiesta(int fuel, int passengers, VehicleColor color)
         {
