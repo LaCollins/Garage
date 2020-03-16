@@ -6,13 +6,6 @@ namespace Garage
 {
     class Aircraft : Vehicle
     {
-        public Aircraft(int fuel, int passengers, VehicleColor color)
-        {
-            Fuel = fuel;
-            Passengers = passengers;
-            Color = color;
-        }
-
         public override void Refuel(int numberOfGallons)
         {
             if (numberOfGallons <= Fuel)
@@ -25,12 +18,12 @@ namespace Garage
             }
         }
 
-        public void Fly(int miles)
+        public virtual void Fly(int miles)
         {
             Console.WriteLine($"You fly {miles} miles.");
         }
 
-        public void Land()
+        public virtual void Land()
         {
             Console.WriteLine($"You land the plane.");
         }
